@@ -13,7 +13,7 @@
         }
 
         #box-asl {
-            height: 400px;
+            height: 500px;
             width: 60%;
             background-color: #eceff1;
             margin: 60px auto;
@@ -27,7 +27,20 @@
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             text-align: center;
         }
-
+        
+        #sels {
+            width: 230px;
+            border: none;
+            border-bottom: 2px solid rgb(64, 162, 219);
+            margin: 40px auto;
+            display: block;
+            font-size: 1.1rem;
+            font-weight: 700;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            outline: none;
+            padding: 5px;
+        }
+        
         input[type="text"] {
             width: 230px;
             height: 30px;
@@ -68,7 +81,13 @@
 
 <body>
     <div id="box-asl">
-        <p>شماره ردیف کل خودتو وارد کن</p>
+        <p>شماره ردیف درس خودتو انتخاب کن</p>
+        <select id="sels">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        <p>شماره ردیف دانشجویتو وارد کن</p>
         <input type="text" id="inp">
         <button id="clk">کلیک کن</button>
         <p id="pp1"></p>
@@ -76,9 +95,11 @@
     </div>
     <script>
         document.querySelector("#clk").addEventListener("click", () => {
+            let vasels = document.querySelector('#sels').value;
             let sora = document.querySelector("#inp").value;
-            let sta = (sora - 1) * 4 + 1;
-            let aka = sora * 4
+            let shkol = (vasels - 1) * 69 + Number(sora);
+            let sta = (shkol - 1) * 4 + 1;
+            let aka = shkol * 4;
             document.querySelector('#pp1').innerHTML = `از صفحه: ${sta}`;
             document.querySelector('#pp2').innerHTML = `تا صفحه: ${aka}`;
         })
