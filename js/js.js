@@ -14,7 +14,7 @@ document.querySelector("#clk").addEventListener("click", () => {
         let section = document.querySelector('#section');
         section.style.padding = `10px`;
         section.innerHTML = `<p>
-        باید برای تکلیف دوم بری به این <a href="http://www.cs.rpi.edu/~moorthy/Courses/S04/modcomp/">لینک </a> پاور فصل
+        باید برای تکلیف دوم بری به این <a href="http://www.cs.rpi.edu/~moorthy/Courses/S04/modcomp/">صفحه </a> پاور فصل
         ${pimane} رو دانلود کنی و ارائه شفاهی بدی <br> <br>
         برای تکلیف سوم هم از صفحه ${sta} تا صفحه ${aka} این <a
             href="http://library.lol/main/BA5FF8420F90F861837783127F524EC8">کتاب </a> رو تو لاتکس ارائه نوشتاری بدی <br>
