@@ -4,111 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kodom Safeh</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        #box-asl {
-            height: 530px;
-            width: 60%;
-            background-color: #eceff1;
-            margin: 60px auto;
-            padding: 10px;
-            box-sizing: border-box;
-        }
-
-        p {
-            font-size: 1rem;
-            font-weight: 700;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            text-align: center;
-        }
-        
-        #sels {
-            width: 230px;
-            border: none;
-            border-bottom: 2px solid rgb(64, 162, 219);
-            margin: 40px auto;
-            display: block;
-            font-size: 1.1rem;
-            font-weight: 700;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            outline: none;
-            padding: 5px;
-        }
-        
-        input[type="text"] {
-            width: 230px;
-            height: 30px;
-            border: none;
-            border-bottom: 2px solid rgb(64, 162, 219);
-            margin: 40px auto;
-            display: block;
-            font-size: 1.1rem;
-            font-weight: 700;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            outline: none;
-            padding: 5px;
-        }
-
-        button {
-            background-color: rgb(23, 158, 11);
-            padding: 5px;
-            margin: 30px auto;
-            width: 130px;
-            height: 45px;
-            box-sizing: border-box;
-            display: block;
-            border: none;
-            border-bottom: 2px solid rgb(148, 148, 148);
-            outline: none;
-            cursor: pointer;
-            color: rgb(209, 203, 203);
-            font-size: 1.1rem;
-            font-weight: 700;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
-
-        button:hover {
-            box-shadow: 5px 5px 4px 5px #888888;
-        }
-        
-        a{
-            text-decoration: none;
-        }
-    </style>
+    <title>Which Page?</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div id="box-asl">
-        <p>شماره ردیف درس خودتو انتخاب کن</p>
-        <select id="sels">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-        </select>
-        <p>شماره ردیف دانشجویتو وارد کن</p>
-        <input type="text" id="inp">
-        <button id="clk">کلیک کن</button>
-        <p id="pp1"></p>
-        <p id="pp2"></p>
-        <P><a href="https://github.com/AliRazavi-edu/PNU_3991/tree/master/_BSc/Theory-of-Languages-and-Machines#Evaluation">برگشت به صفحه</a></P>
-    </div>
-    <script>
-        document.querySelector("#clk").addEventListener("click", () => {
-            let vasels = document.querySelector('#sels').value;
-            let sora = document.querySelector("#inp").value;
-            let shkol = (vasels - 1) * 69 + Number(sora);
-            let sta = (shkol - 1) * 4 + 1;
-            let aka = shkol * 4;
-            document.querySelector('#pp1').innerHTML = `از صفحه: ${sta}`;
-            document.querySelector('#pp2').innerHTML = `تا صفحه: ${aka}`;
-        })
-    </script>
+    <p>شماره ردیف درس رو انتخاب کن</p>
+    <select id="selctradif">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+    </select>
+    <p>شماره ردیف دانشجوی رو وارد کن</p>
+    <input type="text" id="inp">
+    <button id="clk">کلیک کن</button>
+    <div id="section"></div>
+    <script src="js/js.js"></script>
 </body>
 
 </html>
