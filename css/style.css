@@ -1,0 +1,72 @@
+@font-face {
+    font-family: Vazir;
+    src: url(Vazir-FD.woff) format('woff');
+}
+
+* {
+    font-size: 100%;
+    font-weight: 400;
+    font-family: Vazir;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+}
+
+p {
+    text-align: center;
+    color: rgb(175, 176, 177);
+}
+
+#selctradif {
+    width: 30%;
+    border: none;
+    margin: 3% auto;
+    display: block;
+    outline: none;
+    padding: 5px;
+}
+
+input[type="text"] {
+    width: 30%;
+    border: none;
+    margin: 3% auto;
+    display: block;
+    outline: none;
+    padding: 5px;
+}
+
+button {
+    background-color: #03a9f4;
+    padding: 5px;
+    margin: 5% auto;
+    width: 20%;
+    display: block;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+
+#section {
+    background-color: #111;
+    width: 60%;
+    margin: 1px auto;
+    border-radius: 60px;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+    margin: 13px auto;
+    display: block;
+    background-color: #fff;
+    width: 20%;
+    height: 5%;
+    border: 1px solid #007bff;
+    color: #007bff;
+    border-radius: 15px;
+}
